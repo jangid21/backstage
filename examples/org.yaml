@@ -1,0 +1,22 @@
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: jangid21
+spec:
+  profile:
+    displayName: Ajay Jangid
+    email: jangidajay210@gmail.com
+  memberOf: [team-a]
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: team-a
+  description: Team A
+spec:
+  type: team
+  profile:
+    # Intentional no displayName for testing
+    email: jangidajay210@gmail.com
+  parent: backstage
+  children: []
